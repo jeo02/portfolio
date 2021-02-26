@@ -1,0 +1,21 @@
+.container{
+    width: 100%;
+    height: 400px;
+}
+.container img{
+    width: 50%;
+    height: auto;
+    float: right;
+}
+body{
+    margin:0;
+}
+
+#header{
+    width:50%;
+    float: left;
+    background-image: url(geometric-leaves.png);
+}
+h1{
+    text-align: center;
+}

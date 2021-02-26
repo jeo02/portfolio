@@ -1,0 +1,1 @@
+document.getElementById("header").style.height = document.getElementById("top").style.height;
