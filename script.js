@@ -1,1 +1,3 @@
-document.getElementById("header").style.height = document.getElementById("top").style.height;
+let topHeight = document.getElementById("top").style.height;
+console.log("hi");
+document.getElementById("header").style.height = top;
