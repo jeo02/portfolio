@@ -76,7 +76,7 @@ li{
 
 .scroll{
     grid-column-start: 2;
-    grid-row-start: 2;
+    grid-row-start: 3;
     grid-row-end: 7;
     background-color: #d7cec7;
     z-index: -2;
@@ -85,17 +85,46 @@ li{
     margin-top: 100px;
     display: grid;
     grid-template-columns: 10% auto 10%;
-    grid-template-rows: 175px 175px 200px 500px 200px;
+    grid-template-rows: 175px 175px 200px 500px 1000px;
 }
 
 #aboutMe{
     background-color: #d7cec7;
     grid-column-start: 2;
-    grid-row-start: 6;
+    grid-row-start: 5;
 }
 .navBar{
     position: fixed;
     top:0;
     width: 100%;
     z-index: 11;
+}
+
+.header{
+    text-align: center;
+    display: block;
+}
+
+#flex{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#description{
+    flex-grow: 1;
+    width:50%
+}
+
+#slideshow{
+    flex-grow: 1;
+    width: 50%;
+    
+}
+
+.mySlides{
+    max-height: 600px;
+    max-width: 90%;
+    margin:auto;
+    display:block;
 }

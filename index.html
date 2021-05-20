@@ -7,7 +7,7 @@
         <script src="script.js"></script>
     </head>
 
-    <body>
+    <body onresize="gridResize()">
         <div class = "navBar">
             <ul>
                 <li id = "left">Juan's Portfolio</li>
@@ -29,12 +29,26 @@
             </div> 
 
             <div class = "scroll">
-                <img src = "stony_pic.jpg" id = "image1">
+                <img onload="gridResize()" src = "stony_pic.jpg" id = "image1">
             </div>
 
             <div id = "aboutMe">
-                <h1>About Me</h1>
-                <p>I am currently a Computer Science major at Stony Brook Unviersity.</p>
+                <h1 class = "header">About Me</h1>
+                <div id = "flex">
+                    <p id = "description">I am currently a Computer Science major at Stony Brook Unviersity. I aspire to become a Software Engineer.
+                        <br>Now a little about me. I am passionate about learning and I am always looking for a new challange. I am currently a sophmore and have learned 
+                        object orientated programming and data structures. I enjoy attending hackathons, going on a run, playing video games, cooking, and enjoying nature. 
+                        <br>I hope you enjoy my portfolio!
+                    </p>
+                    <div id = "slideshow">
+                        <img class="mySlides" src="flag_pic.jpg">
+                        <img class="mySlides" src="track_pic2.JPG">
+                        <img class="mySlides" src="track_pic3.JPG">
+                        <img class="mySlides" src="penguin.jpg">
+                        <button class="leftButton" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="rightButton" onclick="plusDivs(+1)">&#10095;</button>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
