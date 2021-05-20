@@ -1,6 +1,6 @@
 function gridResize(){
-    document.getElementById("container").style.gridTemplateRows = "175px 175px 200px " + (document.getElementById("image1").clientHeight * 0.5) + "px 1000px " + 
-    (document.getElementById("image1").clientHeight * 0.5) + "px";
+    document.getElementById("container").style.gridTemplateRows = "175px 175px 200px " + (document.getElementById("image1").clientHeight * 0.75) + "px 1000px " + 
+    (document.getElementById("image1").clientHeight * 0.75) + "px 1000px";
 }
 
 document.addEventListener('scroll', function(){
