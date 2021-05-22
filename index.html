@@ -34,13 +34,13 @@
 
             <div id = "aboutMe">
                 <h1 class = "header">About Me</h1>
-                <div id = "flex">
-                    <p id = "description">I am currently a Computer Science major at Stony Brook Unviersity. I aspire to become a Software Engineer.
+                <div class = "flex">
+                    <p class = "flexChild">I am currently a Computer Science major at Stony Brook Unviersity. I aspire to become a Software Engineer.
                         <br>Now a little about me. I am passionate about learning and I am always looking for a new challange. I am currently a sophmore and have learned 
                         object orientated programming and data structures. I enjoy attending hackathons, going on a run, playing video games, cooking, and enjoying nature. 
                         <br>I hope you enjoy my portfolio!
                     </p>
-                    <div id = "slideshow">
+                    <div class = "flexChild">
                         <img class="mySlides" src="flag_pic.jpg">
                         <img class="mySlides" src="track_pic2.JPG">
                         <img class="mySlides" src="track_pic3.JPG">
@@ -53,6 +53,49 @@
 
             <div id = "projects">
                 <h1 class ="header">Projects</h1>
+                <h2>Space Rangers</h2>
+                <div class = "flex">
+                    <p class = "flexChild">This is a 5 level space invador themed game. Either beat the boss, reach level 5, or face defeat. 
+                    I created this game in highschool using java. Utilizing API JFrame and a little creativity I was able to create this project.
+                    This is also the first time I manipulated data structures.</p>
+                    <div class = "flexChild">
+                        <video id = "spaceRanger" class = "center video" onmouseover="hoverVideo(true, this)" onmouseout="hoverVideo(false, this)" loop muted>
+                            <source src = "SpaceRangers_video.mp4" type = "video/mp4">Your browser does not support Videos
+                        </video>
+                    </div>
+                </div>
+
+                <h2>OspinaSzablinskiGame</h2>
+                <div class = "flex">
+                    <p class = "flexChild">This was my first big Computer Science project, created by me and my partner as sophmore's in highschool. 
+                    Using a grid class created by my teacher I created a simple game where you shoot zombies moving towards you. 
+                    Collect ammo in order to keep shooting and dont let zombies hit you or get past you.</p>
+                    <div class = "flexChild">
+                        <video id = "zombie" class = "center video" onmouseover="hoverVideo(true, this)" onmouseout="hoverVideo(false, this)" loop muted>
+                            <source src = "zombieVideo.mp4" type = "video/mp4">Your browser does not support Videos
+                        </video>
+                    </div>
+                </div>
+
+                <h2>Rock-Paper-Scissor</h2>
+                <div class = "flex">
+                    <p class = "flexChild">This project was a simple implimintation of rock-paper-scissors. This was the first website I ever created 
+                    and by using if statements and Math.random I recreated rock-paper-scissors but against a computer. </p>
+                    <div class = "flexChild">
+                        <video id = "rock" class = "center video" onmouseover="hoverVideo(true, this)" onmouseout="hoverVideo(false, this)" loop muted>
+                            <source src = "Rock-paper-scissors.mp4" type = "video/mp4">Your browser does not support Videos
+                        </video>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div id = "ContactMe">
+                <h1 class = "header">Contact Me</h1>
+                <p>I hope you enjoyed my portfolio and the projects I have worked on so far in my ever developing career. 
+                I plan to make many more projects and expand my experience with them. This portfolio put everything I 
+                have learned so far about web development to the test, and I plan to improve upon it.</p>
+                <p>You can contact me at my email </p>
             </div>
         </div>
     </body>

@@ -1,6 +1,6 @@
 function gridResize(){
     document.getElementById("container").style.gridTemplateRows = "175px 175px 200px " + (document.getElementById("image1").clientHeight * 0.75) + "px 1000px " + 
-    (document.getElementById("image1").clientHeight * 0.75) + "px 1000px";
+    (document.getElementById("image1").clientHeight * 0.75) + "px 2000px " + (document.getElementById("image1").clientHeight * 0.75) + "px 1000px";
 }
 
 document.addEventListener('scroll', function(){
@@ -32,4 +32,11 @@ function showDivs(n) {
     x[i].style.display = "none";
   }
   x[slideIndex-1].style.display = "block";
+}
+
+function hoverVideo(hovering, element){
+  if(hovering)
+    element.play();
+  else
+    element.pause();
 }

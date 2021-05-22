@@ -77,7 +77,7 @@ li{
 .scroll{
     grid-column-start: 2;
     grid-row-start: 3;
-    grid-row-end: 8;
+    grid-row-end: 9;
     background-color: #d7cec7;
     z-index: -2;
 }
@@ -85,7 +85,7 @@ li{
     margin-top: 100px;
     display: grid;
     grid-template-columns: 10% auto 10%;
-    grid-template-rows: 175px 175px 200px 500px 1000px 500px 1000px;
+    grid-template-rows: 175px 175px 200px 500px 1000px 500px 2000px 500px 1000px;
 }
 
 #aboutMe{
@@ -105,26 +105,12 @@ li{
     display: block;
 }
 
-#flex{
+.flex{
     display:flex;
     flex-direction: row;
     align-items: center;
 }
 
-#description{
-    flex-grow: 1;
-    width:50%
-}
-
-#slideshow{
-    flex-grow: 1;
-    width: 50%;
-}
-
-.Button{
-    margin:auto;
-    display:inline;
-}
 
 .mySlides{
     max-height: 600px;
@@ -138,3 +124,46 @@ li{
     grid-column-start: 2;
     grid-row-start: 7;
 }
+
+h2{
+    margin-left: 10px;
+    display: inline-block;
+    font-size: 50px;
+    color: #565656;
+}
+
+#spaceRanger{
+    width:auto;
+    height: 500px;
+}
+.video video{
+    width:100%;
+    height:100%;
+}
+.video:hover{
+    border:#76323f;
+    border-style: solid;
+    border-width: 5px;
+}
+
+.center{
+    margin-left: auto;
+    margin-right:auto;
+    display:block;
+}
+
+.flexChild{
+    flex: 1;
+}
+
+#zombie{
+    width: 400px;
+    height: auto;
+}
+
+#rock{
+    width:400px;
+    height: auto;
+}
+
+
