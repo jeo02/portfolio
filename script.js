@@ -1,16 +1,19 @@
 function gridResize(){
     document.getElementById("container").style.gridTemplateRows = "175px 175px 200px " + (document.getElementById("image1").clientHeight * 0.75) + "px 1000px " + 
-    (document.getElementById("image1").clientHeight * 0.75) + "px 2000px " + (document.getElementById("image1").clientHeight * 0.75) + "px 1000px";
+    (document.getElementById("image1").clientHeight * 0.75) + "px 2000px " + (document.getElementById("image1").clientHeight * 0.75) + "px 600px";
 }
 
 document.addEventListener('scroll', function(){
     let y = window.pageYOffset;
-    var element_position = document.getElementById("aboutMe").offsetTop;
-    if(y > element_position){
-        document.getElementById("image1").src = "track_pic.JPG";
+    var element_position1 = document.getElementById("aboutMe").offsetTop;
+    var element_position2 = document.getElementById("projects").offsetTop;
+    if(y > element_position1 && y < element_position2){
+      document.getElementById("image1").src = "track_pic.JPG"; 
     }
-    else
-        document.getElementById("image1").src = "stony_pic.jpg";
+    else if (y >element_position2)
+      document.getElementById("image1").src = "Colombia_pic.jpg";
+    else if(y < element_position1)
+      document.getElementById("image1").src = "stony_pic.jpg";
 })
 var slideIndex = 1;
 
