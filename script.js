@@ -9,6 +9,7 @@ function gridResize(){
   let row9 = document.getElementById("contentContact").offsetHeight + 30 + "px";
 
   document.getElementById("container").style.gridTemplateRows = row1 + row2 + row3 + row4_6_8 + row5 + row4_6_8 + row7 + row4_6_8 + row9;
+  document.getElementById("imageFinal").style.height = document.getElementById("image1").clientHeight+"px";
 }
 
 document.addEventListener('scroll', function(){

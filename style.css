@@ -192,6 +192,13 @@ h2{
     text-decoration: underline;
 }
 
+#imageFinal{
+    grid-column-start: 2;
+    grid-row-start: 8;
+    width:100%;
+    display: none;
+}
+
 @media (max-width : 1011px){
     h1{
         font-size: 60px;
@@ -238,12 +245,41 @@ h2{
     }
 }
 @media(max-width: 628px){
+    h2{
+        font-size: 25px;
+    }
     p{
         font-size: 18px;
     }
     li{
         font-size: 18px;
         padding: 8px 10px;
+    }
+    #left{
+        display: none;
+    }
+
+    .flex{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #zombie{
+        width: 300px;
+    }
+    #rock{
+        width:300px;
+    }
+
+    .leftMargin{
+        margin-left: 5px;
+    }
+    .rightMargin{
+        margin-right: 5px;
+    }
+    #imageFinal{
+        display: block;
     }
 }
 
