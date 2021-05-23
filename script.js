@@ -1,6 +1,14 @@
+//resizes grid based on elements
 function gridResize(){
-    document.getElementById("container").style.gridTemplateRows = "175px 175px 200px " + (document.getElementById("image1").clientHeight * 0.75) + "px 1000px " + 
-    (document.getElementById("image1").clientHeight * 0.75) + "px 2000px " + (document.getElementById("image1").clientHeight * 0.75) + "px 600px";
+  let row1 = document.getElementById("profile").offsetHeight/2 + "px ";
+  let row2 = row1;
+  let row3 = document.getElementById("content").offsetHeight + "px ";
+  let row4_6_8 = (document.getElementById("image1").clientHeight * 0.75) + "px ";
+  let row5 = document.getElementById("contentAbout").offsetHeight + 30 + "px ";
+  let row7 = document.getElementById("contentProj").offsetHeight + 30 + "px ";
+  let row9 = document.getElementById("contentContact").offsetHeight + 30 + "px";
+
+  document.getElementById("container").style.gridTemplateRows = row1 + row2 + row3 + row4_6_8 + row5 + row4_6_8 + row7 + row4_6_8 + row9;
 }
 
 document.addEventListener('scroll', function(){

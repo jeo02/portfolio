@@ -5,17 +5,17 @@ body{
     background-image: url(geometric-leaves.png);
     margin-bottom: 20px;
 }
-
-#header{
+#empty{
     background-color: #d7cec7;
     grid-column-start: 2;
     grid-row-start: 2;
-    grid-row-end: 4;
+}
+#header{
+    background-color: #d7cec7;
+    grid-column-start: 2;
+    grid-row-start: 3;
 }
 #content{
-    margin:0 auto;
-    margin-top: 175px;
-    width:80%;
     height: fit-content;
     text-align: center;
 }
@@ -23,6 +23,7 @@ h1{
     display: inline-block;
     font-size: 80px;
     color: #565656;
+    margin: 20px;
 }
 
 p{
@@ -30,8 +31,10 @@ p{
     font-size: 35px;
     color:#76323f;
     text-align: left;
-    margin-left: 20px;
+    margin: 20px;
 }
+
+
 ul{
     list-style-type: none;
     margin:0;
@@ -50,7 +53,6 @@ li{
 }
 #left{
     float: left;
-    padding-right: 30%;
 }
 
 #profile{
@@ -85,7 +87,7 @@ li{
     margin-top: 100px;
     display: grid;
     grid-template-columns: 10% auto 10%;
-    grid-template-rows: 175px 175px 200px 500px 1000px 500px 2000px 500px 600px;
+    grid-template-rows: 175px 175px 200px 500px 1000px 500px 1800px 500px 600px;
 }
 
 #aboutMe{
@@ -132,7 +134,7 @@ li{
 }
 
 h2{
-    margin-left: 10px;
+    margin: 20px;
     display: inline-block;
     font-size: 50px;
     color: #565656;
@@ -141,6 +143,9 @@ h2{
 #spaceRanger{
     width:auto;
     height: 500px;
+}
+.video{
+    margin:10px;
 }
 .video video{
     width:100%;
@@ -187,4 +192,58 @@ h2{
     text-decoration: underline;
 }
 
+@media (max-width : 1011px){
+    h1{
+        font-size: 60px;
+    }
+    p{
+        font-size: 25px;
+    }
+    h2{
+        font-size: 45px;
+    }
+    #zombie{
+        width: 300px;
+    }
+    #rock{
+        width:350px;
+    }
+}
+
+@media (max-width: 800px){
+    h1{
+        font-size: 45px;
+    }
+    p{
+        font-size: 23px;
+    }
+    h2{
+        font-size: 35px;
+    }
+    #zombie{
+        width: 200px;
+    }
+    #rock{
+        width:250px;
+    }
+    #profile{
+        width: 250px;
+        height: 250px;
+    }
+    #spaceRanger{
+        height: 400px;
+    }
+    #container{
+        grid-template-columns: 5% auto 5%;
+    }
+}
+@media(max-width: 628px){
+    p{
+        font-size: 18px;
+    }
+    li{
+        font-size: 18px;
+        padding: 8px 10px;
+    }
+}
 
