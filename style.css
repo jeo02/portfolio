@@ -199,12 +199,12 @@ h2{
     display: none;
 }
 
-/*@media (max-width : 1011px){
+@media (max-width : 1011px){
     h1{
         font-size: 60px;
     }
     p{
-        font-size: 25px;
+        font-size: 18px;
     }
     h2{
         font-size: 45px;
@@ -216,7 +216,7 @@ h2{
         width:350px;
     }
 }
-*/
+
 @media (max-width: 800px){
     h1{
         font-size: 45px;
